@@ -1,22 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <PageHeader/>
+    <TweetData/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TweetData from '@/components/TweetData.vue';
+import PageHeader from '@/components/PageHeader.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TweetData,
+    PageHeader,
   }
 }
 </script>
 
 <style>
+html{
+  background-color: lavender;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
